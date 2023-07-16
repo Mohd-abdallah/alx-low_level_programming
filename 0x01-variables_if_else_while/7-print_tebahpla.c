@@ -18,6 +18,6 @@ int main(void)
 
 		alph--;
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
