@@ -7,10 +7,10 @@
  */
 
 /*
- * Main - this function generates a random number
+ * main - this function generates a random number
  * then checks if it's positive or negative.
  *
- * Return 0 at the end
+ * Return: 0 at the end
 */
 int main(void)
 {
@@ -24,10 +24,10 @@ int main(void)
 		printf("%d is positive\n", n);
 	} else if (n == 0)
 	{
-		printf("%d is Zero\n", n);
+		printf("%d is zero\n", n);
 	} else
 	{
-		printf("%d is is negative\n", n);
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
