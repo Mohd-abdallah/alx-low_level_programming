@@ -2,20 +2,22 @@
 
 
 /**
- * main - Write a program that prints the alphabet in lowercase,
- * followed by a new line.
- * Print all the letters except q and e
+ * main - a program that prints the alphabet in lowercase,
+ *  and then in uppercase, followed by a new line.
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char alph = 'a';
-	while (alph <= 'z' && alph != ('e' && 'q'))
+	char alph;
+
+	for (alph = 'a'; alph <= 'z'; alph++)
 	{
-		putchar(alph);
-		alph++;
+		if (!(alph == 'e') || !(alph == 'q'))
+		{
+			putchar(alph);
+		}
 	}
 	putchar('\n');
 	return (0);
