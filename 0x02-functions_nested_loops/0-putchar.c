@@ -9,8 +9,6 @@
 
 int  main(void)
 {
-	char alph;
-
 	putchar("_putchar");
 	putchar("\n");
 	return (0);
