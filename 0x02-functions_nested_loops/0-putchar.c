@@ -9,7 +9,8 @@
 
 int  main(void)
 {
-	putchar("_putchar");
-	putchar("\n");
+	char alph;
+
+	_putchar(alph);
 	return (0);
 }
