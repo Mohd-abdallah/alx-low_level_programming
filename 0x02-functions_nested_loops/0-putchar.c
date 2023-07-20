@@ -7,10 +7,11 @@
  * Return: Always 0 (Success)
  */
 
-char  main(void)
+int  main(void)
 {
 	char alph ="_putchar";
 
-	putchar(alph"\n");
+	putchar(alph);
+	putchar("\n");
 	return (0);
 }
