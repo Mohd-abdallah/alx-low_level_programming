@@ -11,6 +11,6 @@ int  main(void)
 {
 	char alph;
 
-	_putchar(alph);
+	int _putchar(alph);
 	return (0);
 }
