@@ -7,9 +7,9 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+char  main(void)
 {
-	char alph = "_putchar";
+	char alph ="_putchar";
 
 	putchar(alph"\n");
 	return (0);
