@@ -9,9 +9,9 @@
 
 int  main(void)
 {
-	char alph ="_putchar";
+	char alph;
 
-	putchar(alph);
+	putchar("_putchar");
 	putchar("\n");
 	return (0);
 }
