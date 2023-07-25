@@ -3,12 +3,15 @@
 
 /**
  * swap_int -  a function that swaps the values of two integers.
- * @a:input
- * @b: input
+ * @a: int to be swaped
+ * @b: int to be swaped 
  * Return: a, b
  */
 void swap_int(int *a, int *b)
 {
-	*a = 42;
-	*b = 98;
+	int c;
+
+	c = *a;
+	*a = *b;
+	*b = c;
 }
