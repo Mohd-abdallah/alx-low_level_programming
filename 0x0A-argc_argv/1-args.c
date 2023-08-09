@@ -8,14 +8,6 @@
 */
 int main(int argc, char *argv[])
 {
-	int sum;
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("%s", argv[i]);
-		sum += atoi(argv[i]);
-	}
-	printf("%d", sum);
+	printf("%d", argc);
 	return (0);
 }
