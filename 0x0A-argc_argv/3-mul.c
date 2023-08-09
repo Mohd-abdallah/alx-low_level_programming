@@ -8,12 +8,15 @@
 */
 int main(int argc, char *argv[])
 {
-	int i = 1;
 	int multi;
 
-	if (i < argc)
+	if (argc < 3 || argc > 3)
 	{
-		multi = argv[i] * argv[i + 1];
+		return (1);
+	}
+	else
+	{
+		multi = atoi(argv[1]) * atoi(argv[2]);
 	}
 	printf("%d", multi);
 	return (0);
