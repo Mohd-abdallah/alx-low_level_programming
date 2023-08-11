@@ -5,15 +5,16 @@
 /**
  * create_array - a function that creates an array of chars,
  * and initializes it with a specific char.
- * @size: input
- * @c: input
- * Return: 0
+ * @size: size of array
+ * @c: char input
+ * Return: pointer to array, NULL if fail
 */
 char *create_array(unsigned int size, char c)
 {
-	char *str = malloc(sizeof(char));
+	char *str;
 	unsigned int i;
 
+	str = malloc(size * sizeof(char));
 	if (size == 0 || str == NULL)
 	{
 		return (NULL);
