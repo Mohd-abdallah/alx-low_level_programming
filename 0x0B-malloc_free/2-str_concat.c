@@ -1,57 +1,42 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
- * str_concat - a function that concatenates two strings.
- * The returned pointer should point to a newly allocated space in memory
- * which contains the contents of s1,
- * followed by the contents of s2, and null terminated.
- * if NULL is passed, treat it as an empty string.
- * The function should return NULL on failure.
- * @s1: strig input
- * @s2: string input
- * Return: 0
-*/
+ * *str_concat - concatenates two strings.
+ * @s1: type char str.
+ * @s2: type char str
+ * Return: Null on failure.
+ */
 char *str_concat(char *s1, char *s2)
 {
-	char *str;
-	int i = 0;
-	int j = 0;
+	char *pstr = NULL;
+	unsigned int len;
+	unsigned int x, y, z, zz;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
 
-	while (s1[i] != '\0')
-	{
-		i++;
-	}
-	while (s2[j] != '\0')
-	{
-		j++;
-	}
-	str = malloc(sizeof(char) * (i + j + 1));
-	if (str == NULL)
-	{
+	for (x = 0; s1[x] != '\0'; x++)
+		;
+	for (y = 0; s2[y] != '\0'; y++)
+		;
+	len = x + y + 1;
+	pstr = malloc(len * sizeof(char));
+
+	if (pstr == NULL)
 		return (NULL);
-	}
 
-	while (s1[i] != '\0')
+	for (z = 0; z < x; z++)
 	{
-		str[i] = s1[i];
-		i++;
+		pstr[z] = s1[z];
 	}
-	while (s2[i] != '\0')
+	for (zz = 0; zz < y; z++, zz++)
 	{
-		str[j] = s2[j];
-		i++, j++;
+		pstr[z] = s2[zz];
 	}
-	str[i] = '\0';
-	return (str);
+	pstr[len] = s2[zz];
+	return (pstr);
 }
