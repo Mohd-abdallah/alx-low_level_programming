@@ -49,7 +49,7 @@ char *str_concat(char *s1, char *s2)
 	while (s2[i] != '\0')
 	{
 		str[j] = s2[j];
-		j++;
+		i++, j++;
 	}
 	str[i] = '\0';
 	return (str);
