@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-#include <string.h>
 
 /**
  * str_concat - a function that concatenates two strings.
@@ -16,22 +15,43 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-	int len1 = strlen(s1);
-	int len2 = strlen(s2);
-	int len = len1 + len2 + 1;
-	char *new_srt;
+	char *str;
+	int i = 0;
+	int j = 0;
 
-	if (s1 == NULL) {
+	if (s1 == NULL)
+	{
 		s1 = "";
 	}
-	if (s2 == NULL) {
+	if (s2 == NULL)
+	{
 		s2 = "";
 	}
-	new_str = malloc(len * sizeof(char));
-	if (new_str == NULL) {
+
+	while (s1[i] != '\0')
+	{
+		i++;
+	}
+	while (s2[j] != '\0')
+	{
+		j++
+			}
+	str = malloc(sizeof(char) * (i + j + 1));
+	if (str == NULL)
+	{
 		return (NULL);
 	}
-	strcpy(new_str, s1);
-	strcat(new_str, s2);
-	return (new_str);
+
+	while (s1[i] != '\0')
+	{
+		str[i] = s1[i];
+		i++;
+	}
+	while (s2[i] != '\0')
+	{
+		str[j] = s2[j];
+		i++, j++;
+	}
+	str[i] = '\0';
+	return (str);
 }
