@@ -10,17 +10,21 @@
  */
 int _islower(int c)
 {
-	int i;
+	int i,j;
 
-	for(i = 'aA'; i <= 'zZ'; i++)
+	for(i = 'A'; i <= 'Z'; i++)
 	{
-		if (c == i)
+		for(j = 'a'; j <= 'z'; j++)
 		{
-			return(1);
-		}
-		else
-		{
-			return(0);
+			if (c == j)
+			{
+				return(1);
+			}
+			else
+			{
+				return(0);
+			}
+
 		}
 	}
 }
