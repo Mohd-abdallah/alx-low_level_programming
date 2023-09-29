@@ -13,17 +13,18 @@
 int print_sign(int n)
 {
 	unsigned int num = n;
+
 	if (num > 0)
 	{
 		num = 1;
 		return (num);
 	}
-	else if (n < 0)
+	else if (num < 0)
 	{
 		num = -1;
 		return (num);
 	}
-	else if (n == 0)
+	else if (num == 0)
 	{
 		return (0);
 	}
