@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-/**i
+/**
  * string_nconcat - a function that concatenates two strings.
  * The returned pointer shall point to a newly allocated space in memory, /
  * which contains s1, followed by the first n bytes of s2, and null terminated.
