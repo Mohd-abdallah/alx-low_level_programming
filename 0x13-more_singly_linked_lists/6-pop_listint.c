@@ -4,7 +4,7 @@
  * and returns the head node’s data (n).
  * if the linked list is empty return 0
  * @head: pointer to pointer.
- * Retun: Data.
+ * Return: Data.
  */
 int pop_listint(listint_t **head)
 {
@@ -19,5 +19,5 @@ int pop_listint(listint_t **head)
 	num = (*head)->n;
 	free(*head);
 	*head = delete;
-	return (num);	
+	return (num);
 }
