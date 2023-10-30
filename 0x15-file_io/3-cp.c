@@ -1,16 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <string.h>
-
-/* Macros */
-#define BUFFER_SIZE 1024
-
-/* Prototypes */
-int test(int ac, char **av);
-int copyFile(const char *source, const char *destination);
-
+#include "main.h"
 /**
  * test_func - function that test
  * @ac: number of arguments.
