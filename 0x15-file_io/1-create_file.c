@@ -15,7 +15,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int file_open, file_write;
-	int size = strlen(text_contnet);
+	int size = strlen(text_content);
 
 	if (filename == NULL)
 	{
