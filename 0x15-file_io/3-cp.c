@@ -39,7 +39,7 @@ int copyFile(const char *source, const char *destination)
 		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", source);
 		return (1);
 	}
-	read_file = read(f1, buffer, sizeof(buffer));
+	read_file = read(file_one, buffer, sizeof(buffer));
 	if (read_file == -1)
 	{
 		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", source);
